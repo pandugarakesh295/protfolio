@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Panduga — Data & ML Developer</title>
+  <meta name="description" content="Portfolio of Rakesh Panduga — Detail-oriented software developer skilled in Python, SQL, Machine Learning, and Data Visualization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Particle Canvas ─── -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ─── Navigation ─── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RP<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link cta-nav">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting" id="hero-greeting">Hello, World! 👋</p>
+      <h1 class="hero-name">Rakesh <span class="gradient-text">Panduga</span></h1>
+      <div class="hero-typewriter">
+        <span class="tw-prefix">I build &nbsp;</span>
+        <span class="tw-text" id="typewriter-text"></span>
+        <span class="tw-cursor">|</span>
+      </div>
+      <p class="hero-tagline">
+        Data-driven developer crafting intelligent solutions with Python, ML & full-stack technologies.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get In Touch
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">ML Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label">Algorithms Used</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num static-val">8.9</span><span class="stat-num-suffix">/10</span>
+          <span class="stat-label">GPA Score</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── About ─── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text glass-card reveal">
+          <p>
+            I'm a <strong class="highlight">Computer Science Engineering</strong> student at SR University (graduating 2027) 
+            with a <strong class="highlight">GPA of 8.9/10</strong>. I'm passionate about turning raw data into actionable 
+            insights and building intelligent systems that solve real-world problems.
+          </p>
+          <p>
+            My expertise spans <strong class="highlight">Machine Learning</strong>, 
+            <strong class="highlight">Data Analysis</strong>, and <strong class="highlight">Full-Stack Development</strong>. 
+            I enjoy working across the entire data pipeline — from preprocessing and feature engineering to 
+            model deployment and visualization.
+          </p>
+          <p>
+            Outside of code, I focus on continuous learning through platforms like AICTE & Cisco 
+            and applying industry-standard workflows to academic projects.
+          </p>
+          <div class="about-chips">
+            <span class="chip">🧠 Machine Learning</span>
+            <span class="chip">📊 Data Analysis</span>
+            <span class="chip">🐍 Python</span>
+            <span class="chip">🗄️ SQL</span>
+            <span class="chip">🌐 Full-Stack</span>
+            <span class="chip">📈 Visualization</span>
+          </div>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card glass-card">
+            <div class="info-icon">🎓</div>
+            <div>
+              <p class="info-label">University</p>
+              <p class="info-value">SR University, CSE</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <p class="info-label">Location</p>
+              <p class="info-value">India</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon">📧</div>
+            <div>
+              <p class="info-label">Email</p>
+              <p class="info-value">pandugarakesh295@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon">📱</div>
+            <div>
+              <p class="info-label">Phone</p>
+              <p class="info-value">+91 9346798607</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon">🏆</div>
+            <div>
+              <p class="info-label">Current GPA</p>
+              <p class="info-value">8.9 / 10</p>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon">💼</div>
+            <div>
+              <p class="info-label">Status</p>
+              <p class="info-value">Open to Opportunities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Education ─── -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot pulse"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-meta">
+              <span class="tl-period">2023 – 2027</span>
+              <span class="tl-badge current">Current</span>
+            </div>
+            <h3 class="tl-title">Bachelor of Technology</h3>
+            <p class="tl-subtitle">Computer Science Engineering</p>
+            <p class="tl-org">SR University</p>
+            <div class="tl-score">
+              <span class="score-label">GPA</span>
+              <div class="score-bar-wrap">
+                <div class="score-bar" data-width="89"></div>
+              </div>
+              <span class="score-val">8.9 / 10</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-meta">
+              <span class="tl-period">2022</span>
+              <span class="tl-badge">Completed</span>
+            </div>
+            <h3 class="tl-title">Class XII — Intermediate</h3>
+            <p class="tl-subtitle">Science (MPC)</p>
+            <p class="tl-org">Sai Shivani Junior College</p>
+            <div class="tl-score">
+              <span class="score-label">Score</span>
+              <div class="score-bar-wrap">
+                <div class="score-bar" data-width="94.3"></div>
+              </div>
+              <span class="score-val">94.3%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Experience ─── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Experience</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="exp-card glass-card reveal">
+        <div class="exp-header">
+          <div class="exp-logo">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#eg)"/><path d="M12 20h16M20 12v16" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="eg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#00c6ff"/><stop offset="1" stop-color="#0072ff"/></linearGradient></defs></svg>
+          </div>
+          <div>
+            <h3 class="exp-role">AI/ML Virtual Internship</h3>
+            <p class="exp-company">AICTE &amp; EduSkills</p>
+          </div>
+          <span class="exp-date">Jan 2025</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>
+            <span class="bullet-icon">▹</span>
+            Completed an <strong>industry-aligned virtual internship</strong> focused on Artificial Intelligence and Machine Learning.
+          </li>
+          <li>
+            <span class="bullet-icon">▹</span>
+            Designed and evaluated <strong>ML models</strong> using real-world datasets; performed data preprocessing, feature extraction, and hyperparameter tuning to improve performance.
+          </li>
+          <li>
+            <span class="bullet-icon">▹</span>
+            Used <strong>Python (Pandas, NumPy, Scikit-learn)</strong> for data analysis, transformation, and model evaluation pipelines.
+          </li>
+          <li>
+            <span class="bullet-icon">▹</span>
+            Created <strong>data summaries and performance reports</strong> using Excel and Google Sheets for stakeholder review.
+          </li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">Python</span>
+          <span class="tag">ML</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Data Preprocessing</span>
+          <span class="tag">Excel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ─── -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Projects</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-glow glow-green"></div>
+          <div class="project-header">
+            <div class="project-icon">🌾</div>
+            <div class="project-links">
+              <a href="#" class="icon-link" title="GitHub" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AgriSmart Hub</h3>
+          <p class="project-desc">
+            A full-stack agricultural platform helping farmers with crop selection and data-driven decision-making. 
+            Integrates MERN stack with Flask APIs and SQL-backed data storage.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="hi-icon">⚡</span>
+              <span>Flask-based REST APIs for seamless backend communication</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon">📊</span>
+              <span>Data dashboards &amp; Excel-compatible crop advisory reports</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon">🗄️</span>
+              <span>SQL for structured crop and marketplace data storage</span>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag tag-green">Python</span>
+            <span class="tag tag-green">MERN Stack</span>
+            <span class="tag tag-green">Flask</span>
+            <span class="tag tag-green">SQL</span>
+            <span class="tag tag-green">Data Analysis</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-glow glow-red"></div>
+          <div class="project-header">
+            <div class="project-icon">❤️</div>
+            <div class="project-links">
+              <a href="#" class="icon-link" title="GitHub" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Heart Disease Prediction</h3>
+          <p class="project-desc">
+            A predictive analytics system to identify heart disease risks using structured clinical datasets 
+            and multiple ML algorithms with Power BI visualization.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="hi-icon">🤖</span>
+              <span>Logistic Regression, Random Forest, Naive Bayes, KNN, Decision Trees</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon">🎯</span>
+              <span>Hyperparameter tuning &amp; cross-validation for improved accuracy</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hi-icon">📈</span>
+              <span>Power BI / Tableau dashboards for risk factor reporting</span>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag tag-red">Python</span>
+            <span class="tag tag-red">SQL</span>
+            <span class="tag tag-red">Scikit-learn</span>
+            <span class="tag tag-red">Power BI</span>
+            <span class="tag tag-red">Tableau</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ─── -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group glass-card reveal">
+          <div class="skill-group-icon">💻</div>
+          <h3 class="skill-group-title">Programming Languages</h3>
+          <div class="skill-pills">
+            <div class="skill-pill">
+              <span class="skill-emoji">🐍</span>Python
+              <div class="skill-level" style="--lv:90%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">🗄️</span>SQL
+              <div class="skill-level" style="--lv:85%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">⚙️</span>C
+              <div class="skill-level" style="--lv:70%"></div>
+            </div>
+          </div>
+          <div class="skill-libs">
+            <span class="lib-tag">Pandas</span>
+            <span class="lib-tag">NumPy</span>
+            <span class="lib-tag">Scikit-learn</span>
+            <span class="lib-tag">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <div class="skill-group-icon">📊</div>
+          <h3 class="skill-group-title">Data &amp; Spreadsheet Tools</h3>
+          <div class="skill-pills">
+            <div class="skill-pill">
+              <span class="skill-emoji">📗</span>Excel
+              <div class="skill-level" style="--lv:88%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">📋</span>Google Sheets
+              <div class="skill-level" style="--lv:85%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">🔧</span>Apps Script
+              <div class="skill-level" style="--lv:75%"></div>
+            </div>
+          </div>
+          <div class="skill-libs">
+            <span class="lib-tag">VLOOKUP</span>
+            <span class="lib-tag">Pivot Tables</span>
+            <span class="lib-tag">VBA</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <div class="skill-group-icon">📈</div>
+          <h3 class="skill-group-title">Data Visualization</h3>
+          <div class="skill-pills">
+            <div class="skill-pill">
+              <span class="skill-emoji">📊</span>Power BI
+              <div class="skill-level" style="--lv:82%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">🎨</span>Tableau
+              <div class="skill-level" style="--lv:80%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">📉</span>Seaborn
+              <div class="skill-level" style="--lv:85%"></div>
+            </div>
+          </div>
+          <div class="skill-libs">
+            <span class="lib-tag">Matplotlib</span>
+            <span class="lib-tag">Data Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <div class="skill-group-icon">🌐</div>
+          <h3 class="skill-group-title">Web Technologies</h3>
+          <div class="skill-pills">
+            <div class="skill-pill">
+              <span class="skill-emoji">⚛️</span>MERN Stack
+              <div class="skill-level" style="--lv:78%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">🐍</span>Flask
+              <div class="skill-level" style="--lv:82%"></div>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-emoji">🌐</span>HTML/CSS
+              <div class="skill-level" style="--lv:85%"></div>
+            </div>
+          </div>
+          <div class="skill-libs">
+            <span class="lib-tag">React</span>
+            <span class="lib-tag">Node.js</span>
+            <span class="lib-tag">MongoDB</span>
+            <span class="lib-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <div class="skill-group-icon">🧠</div>
+          <h3 class="skill-group-title">Core Concepts</h3>
+          <div class="core-concepts">
+            <div class="concept-item">
+              <div class="concept-dot"></div>
+              Machine Learning
+            </div>
+            <div class="concept-item">
+              <div class="concept-dot"></div>
+              Data Analysis
+            </div>
+            <div class="concept-item">
+              <div class="concept-dot"></div>
+              Statistical Modelling
+            </div>
+            <div class="concept-item">
+              <div class="concept-dot"></div>
+              Operating Systems
+            </div>
+            <div class="concept-item">
+              <div class="concept-dot"></div>
+              Feature Engineering
+            </div>
+            <div class="concept-item">
+              <div class="concept-dot"></div>
+              Hyperparameter Tuning
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card reveal">
+          <div class="skill-group-icon">🤝</div>
+          <h3 class="skill-group-title">Soft Skills</h3>
+          <div class="soft-skills">
+            <div class="soft-item">
+              <div class="soft-icon">💬</div>
+              <span>Communication</span>
+            </div>
+            <div class="soft-item">
+              <div class="soft-icon">🧩</div>
+              <span>Problem Solving</span>
+            </div>
+            <div class="soft-item">
+              <div class="soft-icon">🔄</div>
+              <span>Adaptability</span>
+            </div>
+            <div class="soft-item">
+              <div class="soft-icon">🔍</div>
+              <span>Analytical Thinking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Certifications ─── -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Certifications</span>
+        <h2 class="section-title">Credentials</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-badge">
+            <svg viewBox="0 0 60 60" fill="none">
+              <circle cx="30" cy="30" r="28" stroke="url(#cg1)" stroke-width="2"/>
+              <path d="M20 30l7 7 13-14" stroke="url(#cg1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="cg1" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00c6ff"/><stop offset="1" stop-color="#7b2ff7"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">AI/ML Virtual Internship Certificate</h3>
+            <p class="cert-issuer">AICTE &amp; EduSkills</p>
+            <p class="cert-date">January 2025</p>
+            <div class="cert-skills">
+              <span class="tag">Artificial Intelligence</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-badge">
+            <svg viewBox="0 0 60 60" fill="none">
+              <circle cx="30" cy="30" r="28" stroke="url(#cg2)" stroke-width="2"/>
+              <path d="M18 24h24M18 30h18M18 36h12" stroke="url(#cg2)" stroke-width="2.5" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="cg2" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#f093fb"/><stop offset="1" stop-color="#f5576c"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">CCNA: Introduction to Networks</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <p class="cert-date">Cisco Certified</p>
+            <div class="cert-skills">
+              <span class="tag">Networking</span>
+              <span class="tag">CCNA</span>
+              <span class="tag">Protocols</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">I'm actively seeking data-focused roles. Let's build something impactful together.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-links reveal">
+          <a href="mailto:pandugarakesh295@gmail.com" class="contact-card glass-card" id="contact-email">
+            <div class="contact-icon email-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">pandugarakesh295@gmail.com</p>
+            </div>
+            <div class="contact-arrow">→</div>
+          </a>
+          <a href="tel:+919346798607" class="contact-card glass-card" id="contact-phone">
+            <div class="contact-icon phone-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">+91 9346798607</p>
+            </div>
+            <div class="contact-arrow">→</div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-linkedin">
+            <div class="contact-icon linkedin-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">Connect with me</p>
+            </div>
+            <div class="contact-arrow">→</div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-github">
+            <div class="contact-icon github-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <p class="contact-value">View my code</p>
+            </div>
+            <div class="contact-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RP<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">© 2025 Rakesh Panduga. Crafted with ❤️ &amp; Python.</p>
+      <div class="footer-links">
+        <a href="mailto:pandugarakesh295@gmail.com">Email</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
